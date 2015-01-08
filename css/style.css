@@ -1,0 +1,181 @@
+@import url('fonts.css');
+* {
+	margin: 0px;
+	padding: 0px;
+}
+body, html {
+	height: 100%;
+	width: 100%;
+	background-color: #00A79D;
+}
+.oculto {
+	display: none;
+}
+.hBox {
+	width: 100%;
+}
+.logo {
+	background: url('img/logo_header.png');
+	background-size: cover;
+}
+#header {
+	min-height: 100px;
+	padding: 2% 2% 0 2%;
+	height: 20%;
+	width: 96%;
+	float: right;
+	background-color: #E6E7E8;
+}
+#cuerpo{
+	height: 75%;
+	width: 100%;
+	float: right;
+	background-color: #E6E7E8;
+}
+.sliderNavegacion {
+	float: right;
+	width: 70%;
+}
+.linkNavegacion, .detalleImagen, .footer, .tituloGeneral, .parrafoGeneral {
+	font-family: 'roboto';
+	color: #6D6E71;
+}
+.linkSeleccionado, .footer, .linkNavegacion:hover {
+	background-color: #00A79D;
+}
+.sliderPagina{
+	height: 100%;
+}
+.pagina{
+	max-height: 505px;
+}
+.contenidoPrincipal {
+	min-height: 350px;
+	height: 77%;
+}
+.inversion, .tituloPagina {
+	font-family: 'Abril Fatface', cursive;
+}
+.footer{
+	background-color: #00A79D;
+	min-height: 110px;
+	height: 23%;
+	float: right;
+	width: 100%;
+}
+.datos {
+	float: right;
+	border-left: solid 1px #E0E0E0;
+	color:#E0E0E0;
+}
+
+
+
+/*HOME*/
+/*HOME*/
+
+/*CFUNIONA*/
+/*CFUNIONA*/
+
+/*ACERCADE*/
+/*ACERCADE*/
+
+/*CONTACTO*/
+.formContacto{
+	
+}
+/*CONTACTO*/
+
+@media screen and (max-height: 800px) {
+	#header{
+	
+	}
+	.logo {
+		height: 29px;
+		width: 156px;		
+	}
+	.sliderNavegacion {
+		height: 43px;
+	}
+	.linkNavegacion {
+		font-size: 16px;
+		margin: 0 25px 0 25px;
+	}
+	.inversion {
+		font-size: 100px;
+	}
+	.tituloPagina {
+		font-size: 60px;
+	}
+	.detalleImagen {
+		font-size: 12px;
+	}
+	.tituloFooter, .tituloGeneral {
+		font-size: 14px;
+	}
+	.parrafoFooter, .parrafoGeneral {
+		font-size: 12px;
+	}
+	.datos {
+		padding: 10px 30px 30px 50px;
+		font-size: 10px;
+	}
+	.copyright {
+		font-size: 12px;
+	}
+
+	.formContacto {
+		padding: 100px 0 20px 80px;
+	}
+	#camposWrapper {
+		padding-bottom: 20px;
+	}
+	.campoFormulario {
+		min-width: 356px;
+		margin-bottom: 10px;
+		font-size: 14px;
+	}
+	.campoFormulario label {
+		font-size: 14px;
+	}
+	.campoFormulario input, .campoFormulario textarea {
+		font-size: 14px;
+		padding: 0 0 0 5px;
+	}
+	.btnEnviar {
+		padding: 0 0 0 5px;
+	}
+
+}
+
+@media screen and (min-height: 800px) {
+	#datos {
+		padding: 10px 30px 30px 0px;
+		font-size: 12px;
+	}
+	#copyright {
+		font-size: 12px;
+	}
+
+	.formContacto {
+		padding: 100px 0 20px 80px;
+	}
+	#camposWrapper {
+		padding-bottom: 20px;
+	}
+	.campoFormulario {
+		min-width: 356px;
+		margin-bottom: 10px;
+		font-size: 14px;
+	}
+	.campoFormulario label {
+		font-size: 14px;
+	}
+	.campoFormulario input, .campoFormulario textarea {
+		font-size: 14px;
+		padding: 0 0 0 5px;
+	}
+	.btnEnviar {
+		padding: 0 0 0 5px;
+	}
+}
