@@ -14,20 +14,21 @@ body, html {
 .hBox {
 	width: 100%;
 }
+
 .logo {
 	background: url('img/logo_header.png');
 	background-size: cover;
 }
 #header {
-	min-height: 100px;
+	min-height: 80px;
 	padding: 2% 2% 0 2%;
-	height: 20%;
+	height: 13%;
 	width: 96%;
 	float: right;
 	background-color: #E6E7E8;
 }
-#cuerpo{
-	height: 75%;
+#cuerpo {
+	height: 82%;
 	width: 100%;
 	float: right;
 	background-color: #E6E7E8;
@@ -42,79 +43,192 @@ body, html {
 }
 .linkSeleccionado, .footer, .linkNavegacion:hover {
 	background-color: #00A79D;
+	cursor: pointer;
 }
-.sliderPagina{
+.linkNavegacion.slick-active {
+	background-color: #00A79D;
+	color: #E0E0E0;
+}
+.sliderPagina {
 	height: 100%;
 }
-.pagina{
-	max-height: 505px;
+.pagina {
+	max-height: 532px;
 }
 .contenidoPrincipal {
 	min-height: 350px;
-	height: 77%;
+	height: 75%;
 }
 .inversion, .tituloPagina {
 	font-family: 'Abril Fatface', cursive;
 }
-.footer{
+.footer {
 	background-color: #00A79D;
 	min-height: 110px;
-	height: 23%;
+	height: 25%;
 	float: right;
 	width: 100%;
 }
+.tituloFooter, .parrafoFooter {
+	width: 100%;
+	text-align: center;
+	color: #E0E0E0;
+}
+
 .datos {
 	float: right;
 	border-left: solid 1px #E0E0E0;
-	color:#E0E0E0;
+	color: #E0E0E0;
+	text-align: right;
+}
+.tituloPagina {
+	color: #00A79D;
+}
+.wrapperContenido {
+	width: 40%;
+	margin-left: 5%;
+	float: left;
 }
 
-
-
 /*HOME*/
+#tiraHome {
+	width: 95%;
+	margin: 0 2% 0 2%;
+	background: url('img/ilus_home.png');
+	min-height: 170px;
+}
+.inversion {
+	color: #6D6E71;
+	width: 100%;
+	text-align: center;
+}
+.tercio {
+	width: 20%;
+	padding: 2%;
+	float: right;
+}
 /*HOME*/
 
 /*CFUNIONA*/
+#tiraFunciona {
+	width: 95%;
+	margin: 0 2% 0 2%;
+	background: url('img/funciona_tira.png') no-repeat;
+	min-height: 112px;
+	float: left;
+}
 /*CFUNIONA*/
 
 /*ACERCADE*/
+.cv {
+	width: 40%;
+	float: right;
+	padding-right: 30px;
+	display: block;
+	margin-top: 2%;
+}
+.detalleCV {
+	width: 45%;
+	margin-right: 3%;
+	float: left;
+	text-align: right;
+}
+.fotoAye {
+	background: url('img/foto_aye.jpg') no-repeat;
+	background-size: contain;
+	width: 50%;
+	min-height: 206px;
+	height: 100%;
+	float: right;
+}
 /*ACERCADE*/
 
 /*CONTACTO*/
-.formContacto{
+.formContacto {
+
+}
+.campoFormulario {
+	min-width: 356px;
+	width: 70%;
+	margin-bottom: 10px;
+}
+.campoFormulario label {
+	color: #818286;
+	font-weight: 300;
+	font-family: "roboto";
 	
+}
+.campoFormulario input, .campoFormulario textarea {
+	background-color: #818286;
+	color: #F6F7F9;
+	padding: 0 0 0 5px;
+	float: right;
+	width: 60%;
+	border: 0px;
+	resize: none;
+}
+.error {
+	font-family: "Abril Fatface";
+	color: #FF0000;
+	width: 100%;
+	display: block;
+}
+#ocurrioError {
+	font-family: "Abril Fatface";
+	color: #FF0000;
+	width: 100%;
+	display: block;
+}
+#camposWrapper {
+	float: left;
+}
+
+.botones {
+	float: right;
+	min-height: 16px;
+	width: 50%;
+}
+
+.btnEnviar{
+	cursor: pointer;	
+	font-family: "roboto";
+	color: #00A79D;
 }
 /*CONTACTO*/
 
 @media screen and (max-height: 800px) {
-	#header{
-	
+	#header {
+
 	}
 	.logo {
 		height: 29px;
-		width: 156px;		
+		width: 156px;
 	}
 	.sliderNavegacion {
 		height: 43px;
 	}
 	.linkNavegacion {
 		font-size: 16px;
-		margin: 0 25px 0 25px;
+		padding: 0 25px 0 25px;
+		margin: 0 3px 0 3px;
 	}
 	.inversion {
 		font-size: 100px;
 	}
 	.tituloPagina {
 		font-size: 60px;
+		padding-bottom: 30px;
 	}
 	.detalleImagen {
 		font-size: 12px;
 	}
-	.tituloFooter, .tituloGeneral {
+	.tituloFooter, .tituloGeneral, .campoFormulario label {
 		font-size: 14px;
+		padding-bottom: 5px;
 	}
 	.parrafoFooter, .parrafoGeneral {
 		font-size: 12px;
+		padding-bottom: 5px;
 	}
 	.datos {
 		padding: 10px 30px 30px 50px;
@@ -125,7 +239,7 @@ body, html {
 	}
 
 	.formContacto {
-		padding: 100px 0 20px 80px;
+		padding: 0 0 20px 0;
 	}
 	#camposWrapper {
 		padding-bottom: 20px;
