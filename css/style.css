@@ -20,7 +20,6 @@ body, html {
 	background-size: cover;
 }
 #header {
-	min-height: 80px;
 	padding: 2% 2% 0 2%;
 	height: 13%;
 	width: 96%;
@@ -36,6 +35,10 @@ body, html {
 .sliderNavegacion {
 	float: right;
 	width: 70%;
+}
+.linkNavegacion {
+	padding: 0 3% 0 3%;
+	margin: 0 0.5% 0 0.5%;
 }
 .linkNavegacion, .detalleImagen, .footer, .tituloGeneral, .parrafoGeneral {
 	font-family: 'roboto';
@@ -53,10 +56,10 @@ body, html {
 	height: 100%;
 }
 .pagina {
-	max-height: 532px;
+	max-height: 100%;
 }
+
 .contenidoPrincipal {
-	min-height: 350px;
 	height: 75%;
 }
 .inversion, .tituloPagina {
@@ -93,9 +96,8 @@ body, html {
 /*HOME*/
 #tiraHome {
 	width: 95%;
-	margin: 0 2% 0 2%;
+	margin: 1% 2% 0 2%;
 	background: url('img/ilus_home.png');
-	min-height: 170px;
 }
 .inversion {
 	color: #6D6E71;
@@ -114,7 +116,6 @@ body, html {
 	width: 95%;
 	margin: 0 2% 0 2%;
 	background: url('img/funciona_tira.png') no-repeat;
-	min-height: 112px;
 	float: left;
 }
 /*CFUNIONA*/
@@ -123,7 +124,6 @@ body, html {
 .cv {
 	width: 40%;
 	float: right;
-	padding-right: 30px;
 	display: block;
 	margin-top: 2%;
 }
@@ -137,7 +137,6 @@ body, html {
 	background: url('img/foto_aye.jpg') no-repeat;
 	background-size: contain;
 	width: 50%;
-	min-height: 206px;
 	height: 100%;
 	float: right;
 }
@@ -148,20 +147,16 @@ body, html {
 
 }
 .campoFormulario {
-	min-width: 356px;
 	width: 70%;
-	margin-bottom: 10px;
 }
 .campoFormulario label {
 	color: #818286;
 	font-weight: 300;
 	font-family: "roboto";
-	
 }
 .campoFormulario input, .campoFormulario textarea {
 	background-color: #818286;
 	color: #F6F7F9;
-	padding: 0 0 0 5px;
 	float: right;
 	width: 60%;
 	border: 0px;
@@ -185,12 +180,11 @@ body, html {
 
 .botones {
 	float: right;
-	min-height: 16px;
 	width: 50%;
 }
 
-.btnEnviar{
-	cursor: pointer;	
+.btnEnviar {
+	cursor: pointer;
 	font-family: "roboto";
 	color: #00A79D;
 }
@@ -198,7 +192,7 @@ body, html {
 
 @media screen and (max-height: 800px) {
 	#header {
-
+		min-height: 80px;
 	}
 	.logo {
 		height: 29px;
@@ -207,10 +201,15 @@ body, html {
 	.sliderNavegacion {
 		height: 43px;
 	}
-	.linkNavegacion {
-		font-size: 16px;
-		padding: 0 25px 0 25px;
+	.linkNavegacion h1 {
+		font-size: 32px;
 		margin: 0 3px 0 3px;
+	}	
+	.contenidoPrincipal {
+		min-height: 350px;
+	}
+	#tiraHome {
+		min-height: 170px;
 	}
 	.inversion {
 		font-size: 100px;
@@ -237,7 +236,15 @@ body, html {
 	.copyright {
 		font-size: 12px;
 	}
-
+	#tiraFunciona {
+		min-height: 112px;
+	}
+	.cv {
+		padding-right: 30px;
+	}
+	.fotoAye {
+		min-height: 206px;
+	}
 	.formContacto {
 		padding: 0 0 20px 0;
 	}
@@ -256,6 +263,10 @@ body, html {
 		font-size: 14px;
 		padding: 0 0 0 5px;
 	}
+	.botones {
+		min-height: 16px;
+		font-size: 16px;
+	}
 	.btnEnviar {
 		padding: 0 0 0 5px;
 	}
@@ -263,31 +274,81 @@ body, html {
 }
 
 @media screen and (min-height: 800px) {
-	#datos {
-		padding: 10px 30px 30px 0px;
+	#header {
+		min-height: 80px;
+	}
+	.logo {
+		height: 39px;
+		width: 210px;
+	}
+	.sliderNavegacion {
+		height: 43px;
+	}
+	.linkNavegacion h1 {
+		font-size: 46px;
+		margin: 0 3px 0 3px;
+	}	
+	.contenidoPrincipal {
+		min-height: 350px;
+	}
+	#tiraHome {
+		min-height: 170px;
+	}
+	.inversion {
+		font-size: 100px;
+	}
+	.tituloPagina {
+		font-size: 74px;
+		padding-bottom: 30px;
+	}
+	.detalleImagen {
 		font-size: 12px;
 	}
-	#copyright {
+	.tituloFooter, .tituloGeneral, .campoFormulario label {
+		font-size: 18px;
+		padding-bottom: 5px;
+	}
+	.parrafoFooter, .parrafoGeneral {
+		font-size: 14px;
+		padding-bottom: 5px;
+	}
+	.datos {
+		padding: 10px 30px 30px 50px;
 		font-size: 12px;
 	}
-
+	.copyright {
+		font-size: 14px;
+	}
+	#tiraFunciona {
+		min-height: 112px;
+	}
+	.cv {
+		padding-right: 30px;
+	}
+	.fotoAye {
+		min-height: 300px;
+	}
 	.formContacto {
-		padding: 100px 0 20px 80px;
+		padding: 0 0 20px 0;
 	}
 	#camposWrapper {
 		padding-bottom: 20px;
 	}
 	.campoFormulario {
-		min-width: 356px;
-		margin-bottom: 10px;
-		font-size: 14px;
+		min-width: 420px;
+		margin-bottom: 13px;
+		font-size: 18px;
 	}
 	.campoFormulario label {
-		font-size: 14px;
+		font-size: 18px;
 	}
 	.campoFormulario input, .campoFormulario textarea {
-		font-size: 14px;
+		font-size: 18px;
 		padding: 0 0 0 5px;
+	}
+	.botones {
+		min-height: 28px;
+		font-size: 28px;
 	}
 	.btnEnviar {
 		padding: 0 0 0 5px;
