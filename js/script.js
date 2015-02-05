@@ -11,6 +11,7 @@ $(document).ready(function() {
 		asNavFor : '.sliderNavegacion',
 		slide : 'span',
 		adaptiveHeight : false,
+		draggable: false,
 		initialSlide : 0
 	});
 	$('.sliderNavegacion').slick({
