@@ -11,7 +11,7 @@ $(document).ready(function() {
 		asNavFor : '.sliderNavegacion',
 		slide : 'span',
 		adaptiveHeight : false,
-		draggable: false,
+		draggable : false,
 		initialSlide : 0
 	});
 	$('.sliderNavegacion').slick({
@@ -25,7 +25,11 @@ $(document).ready(function() {
 		infinite : false,
 		initialSlide : 0
 	});
+	$('.logo').click(function() {
+		$('#linkHome').click();
+	});
 });
+
 function mandarMensaje() {
 	var nombre = $('#nombre').val();
 	var nombreNegocio = $('#nombreNegocio').val();

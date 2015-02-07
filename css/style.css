@@ -19,6 +19,7 @@ body, html {
 	background: url('img/logo_header.png');
 	background-size: cover;
 	float: left;
+	cursor: pointer;
 }
 #header {
 	padding: 2% 2% 0 2%;
@@ -98,7 +99,7 @@ body, html {
 /*HOME*/
 #tiraHome {
 	width: 95%;
-	margin: 1% 2% 0 2%;
+	margin: 0 2% 0 2%;
 	background: url('img/ilus_home.png') no-repeat;
 }
 .inversion {
@@ -108,7 +109,7 @@ body, html {
 }
 .tercio {
 	width: 20%;
-	padding: 2%;
+	padding: 2% 2% 1% 2%;
 	float: right;
 }
 /*HOME*/
